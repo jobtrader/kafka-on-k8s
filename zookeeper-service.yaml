@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zookeeper1
+  labels:
+    name: zookeeper1
+spec:
+  ports:
+    - port: 12181
+      targetPort: 2181
+      name: zkc
+    - port: 12888
+      targetPort: 2888
+      name: zks2
+    - port: 13888
+      targetPort: 3888
+      name: zks3
+  selector:
+    app: zookeeper1
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zookeeper2
+  labels:
+    name: zookeeper2
+spec:
+  ports:
+    - port: 22181
+      targetPort: 2181
+      name: zkc
+    - port: 22888
+      targetPort: 2888
+      name: zks2
+    - port: 23888
+      targetPort: 3888
+      name: zks3
+  selector:
+    app: zookeeper2
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zookeeper3
+  labels:
+    name: zookeeper3
+spec:
+  ports:
+    - port: 32181
+      targetPort: 2181
+      name: zkc
+    - port: 32888
+      targetPort: 2888
+      name: zks2
+    - port: 33888
+      targetPort: 3888
+      name: zks3
+  selector:
+    app: zookeeper3
+  type: LoadBalancer
