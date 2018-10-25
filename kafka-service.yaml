@@ -7,7 +7,7 @@ spec:
   externalIPs:
     - 172.31.25.198
   ports:
-    - name: port-9042
+    - name: port-9092
       port: 9092
       protocol: TCP
   selector:
@@ -22,7 +22,7 @@ spec:
   externalIPs:
     - 172.31.26.5
   ports:
-    - name: port-9042
+    - name: port-9092
       port: 9092
       protocol: TCP
   selector:
