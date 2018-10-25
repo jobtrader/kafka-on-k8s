@@ -10,7 +10,6 @@ spec:
     metadata:
       labels:
         app: zookeeper1
-        node: ip-172-31-25-198
     spec:
       containers:
       - name: zookeeper1
@@ -39,7 +38,6 @@ spec:
     metadata:
       labels:
         app: zookeeper2
-        node: ip-172-31-26-5
     spec:
       containers:
       - name: zookeeper2
@@ -52,6 +50,6 @@ spec:
         - name: ZOOKEEPER_ID
           value: "2"
         - name: ZOOKEEPER_SERVER_1
-          value: zoo1 
+          value: zoo1
         - name: ZOOKEEPER_SERVER_2
           value: zoo2

@@ -8,7 +8,6 @@ spec:
     app: kafka1
   template:
     metadata:
-      name: kafka1
       labels:
         app: kafka1
     spec:
@@ -37,7 +36,6 @@ spec:
     app: kafka2
   template:
     metadata:
-      name: kafka2
       labels:
         app: kafka2
     spec:
