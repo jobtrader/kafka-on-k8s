@@ -27,3 +27,15 @@ kubectl get services
 kubectl create -f kafka-deployment.yaml
 kubectl get pods
 ```
+
+## delete services/pods
+
+```
+# zookeeper
+kubectl delete -f zk-service.yaml
+kubeclt delete -f zk-deployment.yaml
+
+# kafka
+kubectl delete -f kafka-service.yaml
+kubectl delete -f kafka-deployment.yaml
+```
