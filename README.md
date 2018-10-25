@@ -30,6 +30,8 @@ kubectl get pods
 
 ## delete services/pods
 
+delete all services and pods
+
 ```
 # zookeeper
 kubectl delete -f zk-service.yaml
