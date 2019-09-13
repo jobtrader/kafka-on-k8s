@@ -1,8 +1,8 @@
-# ks8 kafka
+# k8s kafka
 
 ## deploy zookeeper
 
-deploy 2 node zookeeper cluster
+deploy 3 node zookeeper cluster
 
 ```
 # zookeeper service
@@ -16,7 +16,7 @@ kubectl get pods
 
 ## deploy kafka
 
-deploy 2 node kafka cluster
+deploy 3 node kafka cluster
 
 ```
 # kafka service
